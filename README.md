@@ -1,4 +1,4 @@
 # Vexed-with-graphics
 In this program we were given partial code for the graphics and only had to incorporate the recursive part of the program for the game to work.
-The recursive part of the code checks if the block at hand is the same color as the ones surrouding it, if it is then it'll destroy that
-function and then call itself again but for a new location. We primarly used classes in this program. 
+The recursive part of the code checks if the block at hand is the same color as the ones surrounding it, if it is then it'll destroy that block and set the boolean, IsCaptured to true. Then it will call itself again but for a block in a new position, such as top, right, bottom or left. 
+I also have a function that makes sure that the same blocks weren't being used again. What I do is that I run through the whole board and check to see if the boolean IsCaptured is true or not. If it is then I first change the color to blank and then set the boolean to false. I use this function in the main in an else statement once I've called the recursive and gravity function. 
